@@ -1,5 +1,7 @@
 {
   "files.exclude": {
-    "node_modules/": "explorerExcludedFiles"
+    "node_modules/": "explorerExcludedFiles",
+    "public/bundle.js": "explorerExcludedFiles",
+    "public/styles.css": "explorerExcludedFiles"
   }
 }

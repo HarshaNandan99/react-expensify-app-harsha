@@ -1,7 +1,7 @@
 {
+  "git.ignoreLimitWarning": true,
   "files.exclude": {
     "node_modules/": "explorerExcludedFiles",
-    "public/bundle.js": "explorerExcludedFiles",
-    "public/styles.css": "explorerExcludedFiles"
+    "public/dist/": "explorerExcludedFiles"
   }
 }

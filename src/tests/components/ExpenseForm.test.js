@@ -82,7 +82,6 @@ test('should set new date on date change', () => {
   expect(wrapper.state('createdAt')).toEqual(now);
 });
 
-
 test('should set calendar focus on change', () => {
   const focused = true;
   const wrapper = shallow(<ExpenseForm />);

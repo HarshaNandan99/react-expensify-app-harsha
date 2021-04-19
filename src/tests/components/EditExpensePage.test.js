@@ -2,6 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import expenses from '../fixtures/expenses';
 import { EditExpensePage } from '../../components/EditExpensePage';
+import database from '../../firebase/firebase'
+import ExpenseForm from '../../components/ExpenseForm';
 
 let editExpense, removeExpense, history, wrapper;
 
@@ -24,7 +26,7 @@ test('should render EditExpensePage', () => {
 });
 
 test('should handle editExpense', () => {
-  wrapper.find('ExpenseForm').prop('onSubmit')(expenses[2]);
+  wrapper.find(ExpenseForm).prop('onSubmit')(expenses[2]);
   expect(history.push).toHaveBeenLastCalledWith('/');
   expect(editExpense).toHaveBeenLastCalledWith(expenses[2].id, expenses[2]);
 });

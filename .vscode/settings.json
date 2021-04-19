@@ -2,6 +2,8 @@
   "git.ignoreLimitWarning": true,
   "files.exclude": {
     "node_modules/": "explorerExcludedFiles",
-    "public/dist/": "explorerExcludedFiles"
+    "public/dist/": "explorerExcludedFiles",
+    ".env.test": "explorerExcludedFiles",
+    ".env.development": "explorerExcludedFiles"
   }
 }

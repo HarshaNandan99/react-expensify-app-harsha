@@ -6,6 +6,7 @@ import {
   sortByAmount,
   sortByDate
 } from '../../actions/filters';
+import 'react-dates/initialize';
 
 test('should generate set start date action object', () => {
   const action = setStartDate(moment(0));

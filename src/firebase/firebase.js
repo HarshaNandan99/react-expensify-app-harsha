@@ -1,7 +1,7 @@
-import firebase from "firebase/app";
-import "firebase/analytics";
-import "firebase/auth";
-import "firebase/database";
+import firebase from 'firebase/app';
+import 'firebase/analytics';
+import 'firebase/auth';
+import 'firebase/database';
 
 var config = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -18,6 +18,7 @@ firebase.initializeApp(config);
 
 // Get a reference to the database service
 var database = firebase.database();
+var googleAuthProvider = new firebase.auth.GoogleAuthProvider();
  
-export {firebase, database as default};
+export {firebase, googleAuthProvider, database as default};
 
